@@ -1,388 +1,388 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linearity Home buttons</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          "Segoe UI", sans-serif;
-        background: #000;
-        color: #fff;
-      }
 
-      * {
-        box-sizing: border-box;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linearity Home buttons</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: #000;
+      color: #fff;
+    }
 
-      body {
-        margin: 0;
-        min-width: 320px;
-        min-height: 100vh;
-        background:
-          radial-gradient(circle at 20% 0%, rgba(118, 45, 255, 0.15), transparent 32rem),
-          radial-gradient(circle at 90% 25%, rgba(253, 124, 15, 0.12), transparent 28rem),
-          #050505;
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      main {
-        width: min(1120px, calc(100% - 40px));
-        margin: 0 auto;
-        padding: 80px 0 112px;
-      }
+    body {
+      margin: 0;
+      min-width: 320px;
+      min-height: 100vh;
+    }
 
-      h1,
-      h2,
-      p {
-        margin: 0;
-      }
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 80px 0 112px;
+    }
 
-      h1 {
-        max-width: 720px;
-        font-size: clamp(2.5rem, 7vw, 5.5rem);
-        font-weight: 500;
-        letter-spacing: -0.045em;
-        line-height: 0.95;
-      }
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
 
-      .intro {
-        max-width: 610px;
-        margin-top: 24px;
-        color: rgba(255, 255, 255, 0.55);
-        font-size: 16px;
-        line-height: 1.6;
-      }
+    h1 {
+      max-width: 720px;
+      font-size: clamp(2.5rem, 7vw, 5.5rem);
+      font-weight: 500;
+      letter-spacing: -0.045em;
+      line-height: 0.95;
+    }
 
-      .demo-section {
-        margin-top: 72px;
-        padding-top: 28px;
-        border-top: 1px solid rgba(255, 255, 255, 0.12);
-      }
+    .intro {
+      max-width: 610px;
+      margin-top: 24px;
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 16px;
+      line-height: 1.6;
+    }
 
-      .section-heading {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 24px;
-        margin-bottom: 32px;
-      }
+    .demo-section {
+      margin-top: 72px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
 
-      h2 {
-        font-size: 20px;
-        font-weight: 500;
-      }
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
 
-      .caption {
-        color: rgba(255, 255, 255, 0.38);
-        font-size: 12px;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+    }
 
-      /* ButtonKP, translated from Vue/Tailwind into plain HTML/CSS. */
-      .kp-button {
-        --button-padding-x: 24px;
-        --button-padding-y: 14px;
-        position: relative;
-        isolation: isolate;
-        display: inline-flex;
-        width: fit-content;
-        align-items: center;
-        justify-content: center;
-        padding: var(--button-padding-y) var(--button-padding-x);
-        border: 0;
-        border-radius: 999px;
-        color: #fff;
-        font: 500 14px/1.5 Inter, ui-sans-serif, system-ui, sans-serif;
-        text-align: center;
-        text-decoration: none;
-        white-space: nowrap;
-        cursor: pointer;
-        user-select: none;
-        transition: all 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-        -webkit-tap-highlight-color: transparent;
-      }
+    .caption {
+      color: rgba(255, 255, 255, 0.38);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
 
-      .kp-button:focus-visible {
-        outline: 2px solid #fff;
-        outline-offset: 5px;
-      }
+    /* ButtonKP, translated from Vue/Tailwind into plain HTML/CSS. */
+    .kp-button {
+      --button-padding-x: 24px;
+      --button-padding-y: 14px;
+      position: relative;
+      isolation: isolate;
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      justify-content: center;
+      padding: var(--button-padding-y) var(--button-padding-x);
+      border: 0;
+      border-radius: 999px;
+      color: #fff;
+      font: 500 14px/1.5 Inter, ui-sans-serif, system-ui, sans-serif;
+      text-align: center;
+      text-decoration: none;
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -webkit-tap-highlight-color: transparent;
+    }
 
-      .kp-button--glass {
-        background: rgba(255, 255, 255, 0.05);
-        box-shadow:
-          0 2px 2px rgba(0, 0, 0, 0.15),
-          inset 0 0 11px rgba(255, 255, 255, 0.16);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-      }
+    .kp-button:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 5px;
+    }
 
-      .kp-button--glass:hover {
-        box-shadow:
-          0 2px 2px rgba(0, 0, 0, 0.15),
-          inset 0 0 18px rgba(255, 255, 255, 0.26);
-      }
+    .kp-button--glass {
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow:
+        0 2px 2px rgba(0, 0, 0, 0.15),
+        inset 0 0 11px rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
 
-      .kp-button--primary {
-        background: #ff4800;
-        box-shadow:
-          0 2px 2px rgba(0, 0, 0, 0.15),
-          inset 0 -5px 17px #ffd900;
-      }
+    .kp-button--glass:hover {
+      box-shadow:
+        0 2px 2px rgba(0, 0, 0, 0.15),
+        inset 0 0 18px rgba(255, 255, 255, 0.26);
+    }
 
-      .kp-button--primary:hover {
-        box-shadow:
-          0 2px 2px rgba(0, 0, 0, 0.15),
-          inset 0 -6px 22px #ffd900;
-      }
+    .kp-button--primary {
+      background: #ff4800;
+      box-shadow:
+        0 2px 2px rgba(0, 0, 0, 0.15),
+        inset 0 -5px 17px #ffd900;
+    }
 
-      .kp-button--text {
-        background: transparent;
-      }
+    .kp-button--primary:hover {
+      box-shadow:
+        0 2px 2px rgba(0, 0, 0, 0.15),
+        inset 0 -6px 22px #ffd900;
+    }
 
-      .kp-button__outer-ring {
-        position: absolute;
-        z-index: -2;
-        inset: -6px;
-        overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.06);
-        border-radius: inherit;
-        background: rgba(255, 255, 255, 0.05);
-        pointer-events: none;
-        transform: translateZ(0);
-        -webkit-mask-image: -webkit-radial-gradient(white, white);
-      }
+    .kp-button--text {
+      background: transparent;
+    }
 
-      .kp-button__outer-ring::after {
-        content: "";
-        position: absolute;
-        left: 54px;
-        bottom: -3px;
-        width: 77px;
-        height: 13px;
-        border-radius: 999px;
-        filter: blur(22px);
-        opacity: 0.65;
-      }
+    .kp-button__outer-ring {
+      position: absolute;
+      z-index: -2;
+      inset: -6px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: inherit;
+      background: rgba(255, 255, 255, 0.05);
+      pointer-events: none;
+      transform: translateZ(0);
+      -webkit-mask-image: -webkit-radial-gradient(white, white);
+    }
 
-      .kp-button--glass .kp-button__outer-ring::after {
-        background: linear-gradient(90deg, #08c380 0%, #fd7c0f 31.73%, #ff2b2b 62.5%, #9500ff 100%);
-      }
+    .kp-button__outer-ring::after {
+      content: "";
+      position: absolute;
+      left: 54px;
+      bottom: -3px;
+      width: 77px;
+      height: 13px;
+      border-radius: 999px;
+      filter: blur(22px);
+      opacity: 0.65;
+    }
 
-      .kp-button--primary .kp-button__outer-ring::after {
-        background: #ffd900;
-        mix-blend-mode: color-dodge;
-      }
+    .kp-button--glass .kp-button__outer-ring::after {
+      background: linear-gradient(90deg, #08c380 0%, #fd7c0f 31.73%, #ff2b2b 62.5%, #9500ff 100%);
+    }
 
-      .kp-button__border {
-        position: absolute;
-        z-index: 1;
-        inset: 0;
-        overflow: hidden;
-        padding: max(1px, 0.0625rem);
-        border-radius: inherit;
-        pointer-events: none;
-        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        mask-composite: exclude;
-      }
+    .kp-button--primary .kp-button__outer-ring::after {
+      background: #ffd900;
+      mix-blend-mode: color-dodge;
+    }
 
-      .kp-button--glass .kp-button__border {
-        background: linear-gradient(
-          135deg,
+    .kp-button__border {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      overflow: hidden;
+      padding: max(1px, 0.0625rem);
+      border-radius: inherit;
+      pointer-events: none;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+    }
+
+    .kp-button--glass .kp-button__border {
+      background: linear-gradient(135deg,
           rgba(255, 255, 255, 0.8) 0%,
           rgba(255, 255, 255, 0.2) 25%,
           rgba(255, 255, 255, 0.1) 50%,
           rgba(255, 255, 255, 0.15) 75%,
-          rgba(255, 255, 255, 0.4) 100%
-        );
-      }
+          rgba(255, 255, 255, 0.4) 100%);
+    }
 
-      .kp-button--primary .kp-button__border {
-        padding: 0;
-        border: 1px solid #ffd900;
-        background: transparent;
-        -webkit-mask: none;
-        mask: none;
-      }
+    .kp-button--primary .kp-button__border {
+      padding: 0;
+      border: 1px solid #ffd900;
+      background: transparent;
+      -webkit-mask: none;
+      mask: none;
+    }
 
-      .kp-button__border--animated {
-        background: transparent !important;
-      }
+    .kp-button__border--animated {
+      background: transparent !important;
+    }
 
-      .kp-button--primary .kp-button__border--primary-animated {
-        padding: max(1px, 0.0625rem);
-        border: 0;
-        background: transparent;
-        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        mask-composite: exclude;
-      }
+    .kp-button--primary .kp-button__border--primary-animated {
+      padding: max(1px, 0.0625rem);
+      border: 0;
+      background: transparent;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+    }
 
-      .kp-button__border--animated::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 300%;
-        aspect-ratio: 1;
-        background: conic-gradient(
-          rgba(255, 255, 255, 0.09) 0% 30%,
+    .kp-button__border--animated::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      aspect-ratio: 1;
+      background: conic-gradient(rgba(255, 255, 255, 0.09) 0% 30%,
           rgba(255, 255, 255, 0.45) 40%,
           rgba(255, 255, 255, 0.09) 50% 80%,
           rgba(255, 255, 255, 0.45) 90%,
-          rgba(255, 255, 255, 0.09) 100%
-        );
-        animation: kp-border-spin 4s linear infinite;
-        will-change: transform;
-      }
+          rgba(255, 255, 255, 0.09) 100%);
+      animation: kp-border-spin 4s linear infinite;
+      will-change: transform;
+    }
 
-      .kp-button__border--primary-animated::before {
-        background: conic-gradient(
-          rgba(255, 217, 0, 0.28) 0% 28%,
+    .kp-button__border--primary-animated::before {
+      background: conic-gradient(rgba(255, 217, 0, 0.28) 0% 28%,
           #fff2a6 38%,
           #ff8a00 44%,
           rgba(255, 217, 0, 0.28) 54% 78%,
           #fff2a6 88%,
           #ff8a00 94%,
-          rgba(255, 217, 0, 0.28) 100%
-        );
+          rgba(255, 217, 0, 0.28) 100%);
+    }
+
+    .kp-button:hover .kp-button__border--animated::before {
+      animation-play-state: paused;
+    }
+
+    .kp-button__label {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      height: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .kp-button__label span {
+      grid-area: 1 / 1;
+      transition: all 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    .kp-button__label span:last-child {
+      transform: translateY(100%);
+    }
+
+    .kp-button:hover .kp-button__label span:first-child {
+      transform: translateY(-100%);
+    }
+
+    .kp-button:hover .kp-button__label span:last-child {
+      transform: translateY(0);
+    }
+
+    .kp-button--sm {
+      --button-padding-x: 16px;
+      --button-padding-y: 8px;
+    }
+
+    .kp-button--md {
+      --button-padding-x: 32px;
+      --button-padding-y: 20px;
+      font-size: 16px;
+    }
+
+    .kp-button--header {
+      --button-padding-x: 20px;
+      --button-padding-y: 12px;
+    }
+
+    .kp-button--matched {
+      width: 148px;
+    }
+
+    .pair {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @keyframes kp-border-spin {
+      from {
+        transform: translate(-50%, -50%) rotate(0deg);
       }
 
-      .kp-button:hover .kp-button__border--animated::before {
-        animation-play-state: paused;
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    @media (max-width: 760px) {
+      main {
+        width: min(100% - 32px, 560px);
+        padding-top: 48px;
       }
 
-      .kp-button__label {
-        position: relative;
-        z-index: 2;
-        display: grid;
-        height: 20px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
-        overflow: hidden;
+      .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
       }
 
-      .kp-button__label span {
-        grid-area: 1 / 1;
-        transition: all 0.65s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-      }
-
-      .kp-button__label span:last-child {
-        transform: translateY(100%);
-      }
-
-      .kp-button:hover .kp-button__label span:first-child {
-        transform: translateY(-100%);
-      }
-
-      .kp-button:hover .kp-button__label span:last-child {
-        transform: translateY(0);
-      }
-
-      .kp-button--sm {
-        --button-padding-x: 16px;
-        --button-padding-y: 8px;
-      }
-
-      .kp-button--md {
-        --button-padding-x: 32px;
-        --button-padding-y: 20px;
-        font-size: 16px;
+      .kp-button__outer-ring {
+        inset: -4px;
       }
 
       .kp-button--header {
-        --button-padding-x: 20px;
-        --button-padding-y: 12px;
+        --button-padding-x: 16px;
+        --button-padding-y: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .kp-button,
+      .kp-button__label span {
+        transition-duration: 0.01ms;
       }
 
-      .kp-button--matched {
-        width: 148px;
+      .kp-button__border--animated::before {
+        animation: none;
       }
+    }
+  </style>
+</head>
 
-      .pair {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 20px;
-      }
+<body>
+  <main>
+    <h1>Home button system</h1>
+    <p class="intro">
+      Standalone HTML version of the ButtonKP variants used by the Linearity home page.
+      Hover or focus each button to inspect its label swap, glow, glass and border effects.
+    </p>
 
-      @keyframes kp-border-spin {
-        from { transform: translate(-50%, -50%) rotate(0deg); }
-        to { transform: translate(-50%, -50%) rotate(360deg); }
-      }
+    <section class="demo-section">
+      <div class="section-heading">
+        <h2>Home compositions</h2>
+        <p class="caption">Hero pair · Animated header border</p>
+      </div>
+      <div class="pair">
+        <a class="kp-button kp-button--glass" href="#">
+          <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
+          <span class="kp-button__label"><span>Watch demo</span><span>Watch demo</span></span>
+        </a>
+        <a class="kp-button kp-button--primary" href="#">
+          <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
+          <span class="kp-button__label"><span>Start creating</span><span>Start creating</span></span>
+        </a>
+        <a class="kp-button kp-button--primary kp-button--header kp-button--matched" href="#">
+          <i class="kp-button__outer-ring"></i><i
+            class="kp-button__border kp-button__border--animated kp-button__border--primary-animated"></i>
+          <span class="kp-button__label"><span>Get started</span><span>Get started</span></span>
+        </a>
+        <a class="kp-button kp-button--glass kp-button--header kp-button--matched" href="#">
+          <i class="kp-button__outer-ring"></i><i class="kp-button__border kp-button__border--animated"></i>
+          <span class="kp-button__label"><span>Get started</span><span>Get started</span></span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
 
-      @media (max-width: 760px) {
-        main {
-          width: min(100% - 32px, 560px);
-          padding-top: 48px;
-        }
-
-        .section-heading {
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 8px;
-        }
-
-        .kp-button__outer-ring {
-          inset: -4px;
-        }
-
-        .kp-button--header {
-          --button-padding-x: 16px;
-          --button-padding-y: 8px;
-        }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        .kp-button,
-        .kp-button__label span {
-          transition-duration: 0.01ms;
-        }
-
-        .kp-button__border--animated::before {
-          animation: none;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>Home button system</h1>
-      <p class="intro">
-        Standalone HTML version of the ButtonKP variants used by the Linearity home page.
-        Hover or focus each button to inspect its label swap, glow, glass and border effects.
-      </p>
-
-      <section class="demo-section">
-        <div class="section-heading">
-          <h2>Home compositions</h2>
-          <p class="caption">Hero pair · Animated header border</p>
-        </div>
-        <div class="pair">
-          <a class="kp-button kp-button--glass" href="#">
-            <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
-            <span class="kp-button__label"><span>Watch demo</span><span>Watch demo</span></span>
-          </a>
-          <a class="kp-button kp-button--primary" href="#">
-            <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
-            <span class="kp-button__label"><span>Start creating</span><span>Start creating</span></span>
-          </a>
-          <a class="kp-button kp-button--primary kp-button--header kp-button--matched" href="#">
-            <i class="kp-button__outer-ring"></i><i class="kp-button__border kp-button__border--animated kp-button__border--primary-animated"></i>
-            <span class="kp-button__label"><span>Get started</span><span>Get started</span></span>
-          </a>
-          <a class="kp-button kp-button--glass kp-button--header kp-button--matched" href="#">
-            <i class="kp-button__outer-ring"></i><i class="kp-button__border kp-button__border--animated"></i>
-            <span class="kp-button__label"><span>Get started</span><span>Get started</span></span>
-          </a>
-        </div>
-      </section>
-    </main>
-  </body>
 </html>
