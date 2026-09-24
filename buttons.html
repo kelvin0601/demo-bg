@@ -74,25 +74,11 @@
         font-weight: 500;
       }
 
-      .caption,
-      .label {
+      .caption {
         color: rgba(255, 255, 255, 0.38);
         font-size: 12px;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-      }
-
-      .button-grid {
-        display: grid;
-        grid-template-columns: 110px repeat(3, minmax(0, 1fr));
-        align-items: center;
-        gap: 32px 28px;
-      }
-
-      .button-cell {
-        min-height: 88px;
-        display: flex;
-        align-items: center;
       }
 
       /* ButtonKP, translated from Vue/Tailwind into plain HTML/CSS. */
@@ -315,6 +301,10 @@
         --button-padding-y: 12px;
       }
 
+      .kp-button--matched {
+        width: 148px;
+      }
+
       .pair {
         display: flex;
         flex-wrap: wrap;
@@ -337,19 +327,6 @@
           align-items: flex-start;
           flex-direction: column;
           gap: 8px;
-        }
-
-        .button-grid {
-          grid-template-columns: 76px 1fr;
-          gap: 24px 16px;
-        }
-
-        .grid-heading {
-          display: none;
-        }
-
-        .button-cell {
-          min-height: 68px;
         }
 
         .kp-button__outer-ring {
@@ -384,96 +361,6 @@
 
       <section class="demo-section">
         <div class="section-heading">
-          <h2>Variants × sizes</h2>
-          <p class="caption">Primary · Glass · Text</p>
-        </div>
-
-        <div class="button-grid">
-          <span class="grid-heading"></span>
-          <span class="label grid-heading">Primary</span>
-          <span class="label grid-heading">Glass</span>
-          <span class="label grid-heading">Text</span>
-
-          <span class="label">Small</span>
-          <div class="button-cell">
-            <a class="kp-button kp-button--primary kp-button--sm" href="#">
-              <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
-              <span class="kp-button__label"><span>Get started</span><span>Get started</span></span>
-            </a>
-          </div>
-          <div class="button-cell">
-            <a class="kp-button kp-button--glass kp-button--sm" href="#">
-              <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
-              <span class="kp-button__label"><span>Learn more</span><span>Learn more</span></span>
-            </a>
-          </div>
-          <div class="button-cell">
-            <a class="kp-button kp-button--text kp-button--sm" href="#">
-              <span class="kp-button__label"><span>Log in</span><span>Log in</span></span>
-            </a>
-          </div>
-
-          <span class="label">Default</span>
-          <div class="button-cell">
-            <a class="kp-button kp-button--primary" href="#">
-              <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
-              <span class="kp-button__label"><span>Get started</span><span>Get started</span></span>
-            </a>
-          </div>
-          <div class="button-cell">
-            <a class="kp-button kp-button--glass" href="#">
-              <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
-              <span class="kp-button__label"><span>Learn more</span><span>Learn more</span></span>
-            </a>
-          </div>
-          <div class="button-cell">
-            <a class="kp-button kp-button--text" href="#">
-              <span class="kp-button__label"><span>Log in</span><span>Log in</span></span>
-            </a>
-          </div>
-
-          <span class="label">Medium</span>
-          <div class="button-cell">
-            <a class="kp-button kp-button--primary kp-button--md" href="#">
-              <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
-              <span class="kp-button__label"><span>Get started</span><span>Get started</span></span>
-            </a>
-          </div>
-          <div class="button-cell">
-            <a class="kp-button kp-button--glass kp-button--md" href="#">
-              <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
-              <span class="kp-button__label"><span>Learn more</span><span>Learn more</span></span>
-            </a>
-          </div>
-          <div class="button-cell">
-            <a class="kp-button kp-button--text kp-button--md" href="#">
-              <span class="kp-button__label"><span>Log in</span><span>Log in</span></span>
-            </a>
-          </div>
-
-          <span class="label">Header</span>
-          <div class="button-cell">
-            <a class="kp-button kp-button--primary kp-button--header" href="#">
-              <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
-              <span class="kp-button__label"><span>Get started</span><span>Get started</span></span>
-            </a>
-          </div>
-          <div class="button-cell">
-            <a class="kp-button kp-button--glass kp-button--header" href="#">
-              <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
-              <span class="kp-button__label"><span>Contact sales</span><span>Contact sales</span></span>
-            </a>
-          </div>
-          <div class="button-cell">
-            <a class="kp-button kp-button--text kp-button--header" href="#">
-              <span class="kp-button__label"><span>Log in</span><span>Log in</span></span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="demo-section">
-        <div class="section-heading">
           <h2>Home compositions</h2>
           <p class="caption">Hero pair · Animated header border</p>
         </div>
@@ -486,11 +373,11 @@
             <i class="kp-button__outer-ring"></i><i class="kp-button__border"></i>
             <span class="kp-button__label"><span>Start creating</span><span>Start creating</span></span>
           </a>
-          <a class="kp-button kp-button--primary" href="#">
+          <a class="kp-button kp-button--primary kp-button--header kp-button--matched" href="#">
             <i class="kp-button__outer-ring"></i><i class="kp-button__border kp-button__border--animated kp-button__border--primary-animated"></i>
-            <span class="kp-button__label"><span>Primary animated</span><span>Primary animated</span></span>
+            <span class="kp-button__label"><span>Get started</span><span>Get started</span></span>
           </a>
-          <a class="kp-button kp-button--glass kp-button--header" href="#">
+          <a class="kp-button kp-button--glass kp-button--header kp-button--matched" href="#">
             <i class="kp-button__outer-ring"></i><i class="kp-button__border kp-button__border--animated"></i>
             <span class="kp-button__label"><span>Get started</span><span>Get started</span></span>
           </a>
